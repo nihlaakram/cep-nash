@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<feature id="org.wso2.carbon.ml.core" label="WSO2 Carbon - Machine Learner Core Feature" provider-name="%providerName" version="1.2.2">
+  <description>WSO2 Machine Learner (WSO2 ML)</description>
+  <copyright>%copyright</copyright>
+  <license url="%licenseURL">%license</license>
+  <plugin id="breeze_2.10" unpack="false" version="0.11.2.wso2v1"/>
+  <plugin id="spark-mllib_2.10" unpack="false" version="1.6.2.wso2v1"/>
+  <plugin id="spire_2.10" unpack="false" version="0.7.4.wso2v1"/>
+  <plugin id="slf4j.api" unpack="false" version="1.7.13"/>
+  <plugin id="org.wso2.carbon.ml.core" unpack="false" version="1.2.2"/>
+  <plugin id="arpack_combined" unpack="false" version="0.1.0.wso2v1"/>
+  <plugin id="jblas" unpack="false" version="1.2.4.wso2v1"/>
+  <plugin id="core" unpack="false" version="1.1.2.wso2v1"/>
+  <plugin id="h2o" unpack="false" version="3.2.0.wso2v1"/>
+  <require>
+    <import feature="org.wso2.carbon.analytics.spark.server" match="equivalent" version="1.2.5"/>
+    <import feature="org.wso2.carbon.event.output.adapter.server" match="equivalent" version="5.1.3"/>
+    <import feature="org.wso2.carbon.event.output.adapter.email.server" match="equivalent" version="5.1.3"/>
+    <import feature="org.wso2.carbon.spark.commons" match="equivalent" version="5.1.3"/>
+  </require>
+</feature>

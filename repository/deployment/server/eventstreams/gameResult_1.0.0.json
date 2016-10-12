@@ -1,0 +1,36 @@
+{
+  "name": "gameResult",
+  "version": "1.0.0",
+  "nickName": "",
+  "description": "",
+  "payloadData": [
+    {
+      "name": "name",
+      "type": "STRING"
+    },
+    {
+      "name": "timestamp",
+      "type": "LONG"
+    },
+    {
+      "name": "h_cap",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "c_cap",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "h_cop",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "c_cop",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "state",
+      "type": "BOOL"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventPublisher name="resultFile" statistics="disable" trace="disable" xmlns="http://wso2.org/carbon/eventpublisher">
+  <from streamName="gameResult" version="1.0.0"/>
+  <mapping customMapping="enable" type="text">
+    <inline>{{timestamp}},{{name}},{{h_cap}},{{c_cap}},{{h_cop}},{{c_cop}},{{state}},,
+    </inline>
+  </mapping>
+  <to eventAdapterType="file">
+    <property name="buffersize">1024</property>
+    <property name="filename">/home/wso2123/GLD/data/result.csv</property>
+  </to>
+</eventPublisher>

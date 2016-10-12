@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventPublisher name="qOut" statistics="disable" trace="disable" xmlns="http://wso2.org/carbon/eventpublisher">
+  <from streamName="quantityOut" version="1.0.0"/>
+  <mapping customMapping="enable" type="text">
+    <inline>{{id}},{{tstamp}},{{windspeed}},{{solarflux}},{{solarflux}} ,{{sellertotalquantity}},, 
+    </inline>
+  </mapping>
+  <to eventAdapterType="file">
+    <property name="buffersize">1024</property>
+    <property name="filename">/home/wso2123/GLD/data/qOut.csv</property>
+  </to>
+</eventPublisher>
